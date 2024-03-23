@@ -37,6 +37,16 @@
             bottom: 0;
             width: 100%;
         }
+        /* Form styles */
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+        input[type=text], input[type=password], button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
         /* Dropdown menu styles */
         .dropdown {
             position: relative;
@@ -95,7 +105,12 @@
         </ul>
         <h2>Get Started</h2>
         <p>Join our community today and take the first step towards improving your mental health.</p>
-        <button>Sign Up</button>
+        <!-- Registration form -->
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
     </main>
 
     <footer>
